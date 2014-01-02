@@ -1,6 +1,4 @@
 Mobile Data Toggle
 ==================
 
-Widget for Android 2.2 to turn on/off the mobile data connection with just one click.
-Before using this widget, the mobile data connection must be active in the Android settings.
-This project uses reflection.
+Widget for Android to manually switch your data connection between mobile and wifi.  Normally, this isn't necessary, as Android handles the switching for you, but if that is failing for some reason and you need manual override, this makes it easier than using your Settings app.
