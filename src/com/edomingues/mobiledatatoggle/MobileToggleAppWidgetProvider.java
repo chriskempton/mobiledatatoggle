@@ -61,11 +61,6 @@ public class MobileToggleAppWidgetProvider extends AppWidgetProvider {
 		return views;
 	}
 
-	private int getButtonImageId(boolean on) {
-		return on ? R.drawable.ic_appwidget_settings_sync_on_holo
-				: R.drawable.ic_appwidget_settings_sync_off_holo;
-	}
-
 	private void updateWidget(Context context) {
 		RemoteViews views = buildUpdate(context);
 		// Update specific list of appWidgetIds if given, otherwise default to all
