@@ -57,17 +57,6 @@ public class MobileToggleAppWidgetProvider extends AppWidgetProvider {
 
 		if(isEnabled == null)
 			isEnabled = MobileDataSettings.getInstance(context).isEnabled();
-		
-		if(isEnabled) {
-			views.setImageViewResource(R.id.img_sync, getButtonImageId(true));
-			views.setImageViewResource(
-					R.id.ind_sync, R.drawable.appwidget_settings_ind_on_c_holo);
-		}
-		else {
-			views.setImageViewResource(R.id.img_sync, getButtonImageId(false));
-			views.setImageViewResource(
-					R.id.ind_sync, R.drawable.appwidget_settings_ind_off_c_holo);
-		}
 
 		return views;
 	}
